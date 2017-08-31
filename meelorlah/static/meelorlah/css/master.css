@@ -42,6 +42,12 @@ html {
   margin: 0 auto;
 }
 
+.row h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
 
 /* --------------------------------------------------------- */
 /* HEADINGS */
@@ -177,6 +183,7 @@ h2 {
  text-align: center;
  margin-bottom: 30px;
  letter-spacing: 1px;
+ font-weight: 400;
 }
 
 h3 {
@@ -208,8 +215,11 @@ h2:after {
 }
 
 .box p {
- font-size: 90%;
+ font-size: 0.8rem;
  line-height: 145%;
+}
+.box {
+  padding: 1%;
 }
 
 /* FEATURES */
