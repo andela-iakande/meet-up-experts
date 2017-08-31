@@ -47,9 +47,6 @@ html {
 /* HEADINGS */
 /* --------------------------------------------------------- */
 
-
-
-
 h1 {
   margin: 0;
   color: #fff;
@@ -70,8 +67,8 @@ h1 {
     display: inline-block;
     margin-left: 40px;
 }
-.nav nav-tabs nav-justifie li a:link, 
-.nav nav-tabs nav-justifie li a:visited{
+.nav nav-tabs nav-justified li a:link, 
+.nav nav-tabs nav-justified li a:visited{
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
@@ -203,6 +200,7 @@ h2:after {
   line-height: 145%; 
   width: 70%;
   margin-left: 15%;
+  font-size: 0.9rem;
 }
 
 .box {
@@ -212,4 +210,19 @@ h2:after {
 .box p {
  font-size: 90%;
  line-height: 145%;
+}
+
+/* FEATURES */
+/* --------------------------------------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------- */
+/* MEALS */
+/* --------------------------------------------------------- */
+
+section.section-meals{
+  padding-top: 300px;
 }
