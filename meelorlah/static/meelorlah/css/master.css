@@ -243,7 +243,7 @@ h2:after {
 /* MEALS */
 /* --------------------------------------------------------- */
 
-section.section-meals{
+section.section-costume{
   padding-top: 300px;
 }
 
@@ -253,4 +253,46 @@ section.section-meals{
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------- */
+/* FEATURES */
+/* --------------------------------------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------- */
+/* MEALS */
+/* --------------------------------------------------------- */
+
+section.section-costume{
+  padding-top: 50px;
+}
+.costume-showcase{
+  list-style: none;
+  width:100%;    
+}
+.costume-showcase li{
+  display: block;
+  float:left;
+  width: 25%;
+}
+.costume-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+.costume-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: 250px;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.costume-photo img:hover{
+  opacity: 1;
+  transform: scale(1.03);
 }
