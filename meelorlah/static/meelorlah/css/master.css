@@ -97,6 +97,16 @@ h1 {
   padding-left: 130px;
   border-bottom: 0px;
 }
+
+.nav-tabs.nav-justified>li>a{
+  color:#fff;
+}
+
+.nav-tabs.nav-justified>li>a:hover {
+  border-bottom: 1px solid #d7f381;
+  border-radius: 4px 4px 0 0;  
+  background-color: #e67e22;
+}
 /* .container {
   width: 1170px;
 } */
