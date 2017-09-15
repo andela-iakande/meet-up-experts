@@ -1,8 +1,12 @@
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.edit import UpdateView
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse, HttpResponseRedirect
 
-from django.core.urlresolvers import reverse_lazy
-from django.http import Http404
+from django.core.urlresolvers import reverse_lazy, reverse
+from django.shortcuts import get_list_or_404, get_object_or_404
 from django.views import generic
 
 from braces.views import SelectRelatedMixin
@@ -79,3 +83,10 @@ class DeletePost(LoginRequiredMixin, SelectRelatedMixin, generic.DeleteView):
     def delete(self, *args, **kwargs):
         messages.success(self.request, "Post Deleted")
         return super().delete(*args, **kwargs)
+
+
+class EditPost(UpdateView):
+    model = models.Post
+    fields = ['message']
+    template_name_suffix = "_update_form"
+    success_url = reverse_lazy("posts:all")
