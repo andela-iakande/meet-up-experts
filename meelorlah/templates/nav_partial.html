@@ -1,7 +1,8 @@
+{% load staticfiles %}
 <nav>
     <div class = "container">
       <div class ="row"> 
-          <a class="navbar-brand mynav" href="{% url 'home' %}"><img src = "../static/meelorlah/img/logo.png" alt="meelorlah logo" class="logo"></a>
+          <a class="navbar-brand mynav" href="{% url 'home' %}"><img src = "{%static 'meelorlah/img/logo.png' %}" alt="meelorlah logo" class="logo"></a>
   
           <ul class="nav nav-tabs nav-justified">
               {% if user.is_authenticated %}
