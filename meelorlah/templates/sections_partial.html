@@ -1,4 +1,5 @@
 {% load static %}
+{% load bootstrap3 %}
 
 <section class="section-features">  
     <div class = "row">  
@@ -27,49 +28,53 @@
     </div>       
 </section> 
 <section class="section-costume">
-    <ul class="costume-showcase">
-        <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img1.jpg' %}" alt="Makeup ties">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img2.jpg' %}" alt="Interns wanted">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img3.jpg' %}" alt="50years we makeup">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img4.jpg' %}"alt="Bridal head style">
-            </figure>
-        </li>
-    </ul>
-    
-    <ul class="costume-showcase">
-        <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img14.jpg' %}" alt="Beads making">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img13.jpg' %}" alt="Gele ties">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img11.jpg' %}" alt="Beads accross">
-            </figure>
-        </li>
-         <li>
-            <figure class="costume-photo">
-                <img src="{% static 'meelorlah/img/img7.jpg' %}" alt="Gele headties">
-            </figure>
-        </li>
-    </ul>
+    <div>
+        <ul class="costume-showcase">
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img1.jpg' %}" alt="Makeup ties">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img2.jpg' %}" alt="Interns wanted">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img3.jpg' %}" alt="50years we makeup">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img4.jpg' %}"alt="Bridal head style">
+                </figure>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="costume-showcase">
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img14.jpg' %}" alt="Beads making">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img13.jpg' %}" alt="Gele ties">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img11.jpg' %}" alt="Beads accross">
+                </figure>
+            </li>
+            <li>
+                <figure class="costume-photo">
+                    <img src="{% static 'meelorlah/img/img7.jpg' %}" alt="Gele headties">
+                </figure>
+            </li>
+        </ul>
+    </div>
+    <div class="row" /> <!-- Create line break using row padding and margin -->
 </section>
