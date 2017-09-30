@@ -28,10 +28,10 @@ html {
 }
 .logo{
   background-size: cover;
-  height: 100px;
+  height: 50px;
   width: auto;
   float: left;
-  margin-top: 0px;
+  margin-top: 12px;
 }
 
 /* --------------------------------------------------------- */
@@ -330,4 +330,35 @@ i.fa.fa-google-plus:hover {
 }
 i.fa.fa-instagram:hover {
   color:#5174af;
+}
+
+/* --------------------------------------------------------- */
+/* LOGIN PAGE */     /* nav bar  */
+/* --------------------------------------------------------- */
+.navbar-brand {
+  padding-top: 0;
+}
+h1.welcome {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+}
+
+.form-control {
+  display: block;
+  width: 35%;
+  border: 1px solid #ccc;
+}
+
+.content {
+  height: 480px;
+}
+
+nav.navbar.navbar-inverse {
+  height: 80px;
+}
+
+a.btn.btn-simple {
+  margin-top: 15px;
 }
