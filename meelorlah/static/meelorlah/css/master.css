@@ -279,6 +279,7 @@ section.section-costume{
     padding: 50px; 
     bottom: 0;
     width: 100%;
+    margin-top: 30px;
     height: 8%;
   }
    .footer-nav {
@@ -594,3 +595,28 @@ h4.new-group {
     margin-top: -30px;
   }
 }
+
+/* --------------------------------------------------------- */
+/* CREATE NEW POST */      
+/* --------------------------------------------------------- */
+
+h4.new-post {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+input.btn.btn-simple.new-post {
+  background-color: #e67e22;
+}
+input.btn.btn-simple.new-post:hover {
+  background-color: #F0AF76;
+}
+
+input.btn.btn-simple.new-post {
+  margin-left: 20%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 480px) {
+  input.btn.btn-simple.new-post {
+  margin-bottom: 50px;
+  }
+}  
