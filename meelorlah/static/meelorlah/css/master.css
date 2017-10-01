@@ -411,9 +411,6 @@ h1.new {
   margin-left: 40px;
   text-align: center;
 }
-.signup-content {
-  height: 700px;
-}
 .jumbotron.signup {
   height: 700px;
 }
@@ -425,4 +422,21 @@ input.btn.btn-signup {
   color:#fff; 
   border: 1px solid #e67e22;
   font-weight: 500;
+}
+
+
+/* --------------------------------------------------------- */
+/* GROUPS PAGE */    
+/* --------------------------------------------------------- */
+.row.groups {
+  margin-top: 100px;
+}  
+
+.groups-footer {
+  padding-top: 170px;
+}
+
+p.groups-select {
+  font-size: 18px;
+  font-weight:400;
 }
