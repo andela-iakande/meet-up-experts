@@ -333,7 +333,7 @@ i.fa.fa-instagram:hover {
 }
 
 /* --------------------------------------------------------- */
-/* LOGIN PAGE */     /* nav bar  */
+/* LOGIN PAGE */    
 /* --------------------------------------------------------- */
 .navbar-brand {
   padding-top: 0;
@@ -399,4 +399,30 @@ input.btn.btn-login:hover {
 }
 a.btn.btn-simple-login {
   font-size: 16px;
+}
+
+/* --------------------------------------------------------- */
+/* SIGNUP PAGE */    
+/* --------------------------------------------------------- */
+h1.new {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+  text-align: center;
+}
+.signup-content {
+  height: 700px;
+}
+.jumbotron.signup {
+  height: 700px;
+}
+input.btn.btn-signup {
+  margin-left: 40px;
+}
+input.btn.btn-signup {
+  background-color: #e67e22;
+  color:#fff; 
+  border: 1px solid #e67e22;
+  font-weight: 500;
 }

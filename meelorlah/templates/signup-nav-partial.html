@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<nav class= "navbar navbar-inverse">
+    <div class = "container">
+        <div class ="row"> 
+            <a class="navbar-brand mynav" href="{% url 'home' %}"><img src = "{%static 'meelorlah/img/logo.png' %}" alt="meelorlah logo" class="logo"></a>
+            <div class= "container-fluid">
+                <div class="navbar-header">
+                    <button type= "button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>   
+                </div> 
+                <div class="collapse navbar-collapse" id="myNavbar">   
+                <ul class= "nav navbar-nav navbar-right">
+                        <li><a href="{% url 'groups:all' %}"class="btn btn-simple-login">Groups</a></li>
+                        <li><a href="{% url 'accounts:login' %}" class="btn btn-simple-login">Log in</a></li>
+                        <li><a href="{% url 'accounts:signup' %}" class="btn btn-simple-login">Sign up</a></li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    </div>       
+ </nav>  
