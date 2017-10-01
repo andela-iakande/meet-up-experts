@@ -343,6 +343,7 @@ h1.welcome {
   font-weight: 400;
   color: #888;
   margin-left: 40px;
+  text-align: center;
 }
 
 .form-control {
@@ -359,6 +360,43 @@ nav.navbar.navbar-inverse {
   height: 80px;
 }
 
-a.btn.btn-simple {
+a.btn.btn-simple-login {
   margin-top: 15px;
+}
+
+ul.nav.navbar-nav.navbar-right{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;  
+}
+
+.jumbotron {
+    padding-top: 120px;
+    height: 480px;
+}    
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+
+input.btn.btn-login {
+    margin-left: 40px;
+}
+
+input.btn.btn-login {
+  background-color: #e67e22;
+  color:#fff; 
+  border: 1px solid #e67e22;
+  font-weight: 500;
+}
+
+input.btn.btn-login:hover {
+  background-color:#FAB77C;
+}
+.navbar-inverse, .navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #cf6d17;
+  border-radius: 4px 4px 0 0;  
+}
+a.btn.btn-simple-login {
+  font-size: 16px;
 }
