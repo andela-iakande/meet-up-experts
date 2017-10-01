@@ -349,9 +349,9 @@ h1.welcome {
   border: 1px solid #ccc;
 }
 
-.content {
+/* .content {
   height: 480px;
-}
+} */
 
 nav.navbar.navbar-inverse {
   height: 80px;
@@ -373,7 +373,7 @@ ul.nav.navbar-nav.navbar-right{
 }
 
 .jumbotron {
-    height: 450px;
+    height: 350px;
 }    
 .form-group {
   margin-bottom: 15px;
@@ -435,7 +435,9 @@ a.btn.btn-simple-signup {
 .row.groups {
   margin-top: 50px;
 }  
-
+.groups-footer {
+  padding-top: 100px;
+}
 p.groups-select {
   font-size: 18px;
   font-weight:400;
@@ -477,4 +479,47 @@ a.btn.btn-full.create {
 }
 a.btn.btn-full.create:hover {
   background-color:#F0AF76;
+}
+
+/* --------------------------------------------------------- */
+/* GROUP-DETAILS PAGE */      
+/* --------------------------------------------------------- */
+
+a.btn.btn-full.leave {
+  margin-bottom: 50px;
+  margin-left: 45%;  
+}
+
+a.btn.btn-full.leave:hover {
+  background-color:#F0AF76;
+}
+
+h2.member-count {
+  color: #888;
+}
+
+h1.group-name {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+  text-align: center;
+}
+.col-md-8.details {
+  line-height: 50px;
+}
+span.text-danger.icon-label {
+  font-size: 18px;
+  font-weight: 400;
+}
+.label-success {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  background-color:#e67e22;
+}
+@media only screen and (max-width: 480px) {
+  .groups-footer { 
+    padding-top:0;
+  }
 }
