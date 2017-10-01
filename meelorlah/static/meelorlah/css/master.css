@@ -144,11 +144,6 @@ img {
     margin-right: 15px;    
 }
 
-a.btn.btn-simple:hover {
-  background-color: #e67e22;
-}
-
-
 h1, h2, h3{
   font-weight: 300;
   text-transform: uppercase;
@@ -359,7 +354,7 @@ nav.navbar.navbar-inverse {
 }
 @media only screen and (max-width: 480px) {
   nav.navbar.navbar-inverse {
-     height: 238px !important;
+     height: 250px !important;
 }
 }
 
@@ -554,4 +549,48 @@ input.btn.btn-simple.update {
 }
 input.btn.btn-simple.update:hover {
   background-color:#F0AF76;
+}
+
+@media only screen and (max-width: 480px) {
+  textarea.form-control {
+    height : 90%;
+    width : 90%;
+  }
+  input.btn.btn-simple.update {
+    margin-left: 35%;
+    margin-bottom: 50px;
+  }
+  li.dropdown {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* CREATE NEW GROUP PAGE */      
+/* --------------------------------------------------------- */
+
+input.btn.btn-simple.group-form {
+  background-color: #e67e22;
+}
+
+input.btn.btn-simple.group-form:hover {
+  background-color:#F0AF76;
+}
+input.btn.btn-simple.group-form {
+  margin-left: 20%;
+}
+h4.new-group {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  input.btn.btn-simple.group-form {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 35%;
+  }
+  h4.new-group {
+    margin-top: -30px;
+  }
 }
