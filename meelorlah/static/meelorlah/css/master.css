@@ -345,13 +345,14 @@ h1.welcome {
 
 .form-control {
   display: block;
-  width: 35%;
+  width: 45%;
   border: 1px solid #ccc;
+  font-family: sans-serif;
+  font-size: 16px;
 }
-
-/* .content {
-  height: 480px;
-} */
+.login-footer {
+  margin-top: 20px;
+}
 
 nav.navbar.navbar-inverse {
   height: 80px;
@@ -366,17 +367,17 @@ a.btn.btn-simple-login {
   margin-top: 15px;
 }
 
-ul.nav.navbar-nav.navbar-right{
+ul.nav.navbar-nav.navbar-right {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;  
+  text-align: center;
+  padding-top: 15px;
 }
 
-.jumbotron {
-    height: 350px;
-}    
+.jumbotron.login {
+  height: 500px;
+}
 .form-group {
-  margin-bottom: 15px;
   margin-left: 40px;
 }
 
@@ -464,6 +465,9 @@ h1.test {
 a.allgroups-link:hover {
   color:#865F3C;
 }
+.content.test {
+  margin-bottom: 190px;
+}
 
 /* --------------------------------------------------------- */
 /* AUTHORIZATION PAGE */    /* Return to groups page */   
@@ -474,7 +478,7 @@ a.welcome-back {
   font-weight: 800;
 }
 a.btn.btn-full.create {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-left: 50px;  
 }
 a.btn.btn-full.create:hover {
@@ -488,6 +492,10 @@ a.btn.btn-full.create:hover {
 a.btn.btn-full.leave {
   margin-bottom: 50px;
   margin-left: 45%;  
+}
+
+.jumbotron.posts-details {
+  height: 350px;
 }
 
 a.btn.btn-full.leave:hover {
@@ -522,4 +530,28 @@ span.text-danger.icon-label {
   .groups-footer { 
     padding-top:0;
   }
+}
+
+/* --------------------------------------------------------- */
+/* POSTS-UPDATE PAGE */      
+/* --------------------------------------------------------- */
+h4.update {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+input.btn.btn-simple.update {
+  margin-left: 20%;
+  color: #fff;
+  font-weight: 500;
+  background-color: #e67e22;
+}
+input.btn.btn-simple.update:hover {
+  background-color:#F0AF76;
 }
