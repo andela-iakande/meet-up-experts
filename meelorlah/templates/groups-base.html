@@ -23,25 +23,20 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100i,300,400" rel="stylesheet" type ="text/css">
   </head>
   <body>
-    <header>
+    <div>
         {% block header %}
-            {% include "nav_partial.html" %}
+            {% include "login-nav-partial.html" %}
         {% endblock %}
-        <div class="hero-text-box">
+        <div class="content">
             {% block content %}
-                <h1 class ="home-text">Welcome to Meelorlah Elit World!</h1>
             {% endblock %}
-            <a class = "btn btn-full" href = "#">We beautify</a>
-            <a class = "btn btn-ghost" href = "#">Show me more </a>
         </div>
-    </header>
-    {% block section %}
-        {% include "sections_partial.html" %}
-    {% endblock %}
-
-    {% block footer %}
-      {% include "footer_partial.html" %}
-    {% endblock %}
-    <script src="{% static "meelorlah/js/master.js"%}" type="text/javascript" ></script>
+    </div>
+    <div class ="groups-footer">
+            {% block footer %}
+            {% include "footer_partial.html" %}
+          {% endblock %}
+    </div>
   </body>
+  <script src="{% static "meelorlah/js/master.js"%}" type="text/javascript" ></script>
 </html>

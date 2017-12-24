@@ -1,10 +1,15 @@
 header{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/backg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/backg.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
+@media only screen and (max-width: 480px) {
+  h1.home-text{
+    display: none;
+  }
+}
 /* --------------------------------------------------------- */
 /* BASIC SETUP */
 /* --------------------------------------------------------- */
@@ -27,10 +32,11 @@ html {
   
 }
 .logo{
-  height: 100px;
+  background-size: cover;
+  height: 50px;
   width: auto;
   float: left;
-  margin-top: 0px;
+  margin-top: 12px;
 }
 
 /* --------------------------------------------------------- */
@@ -107,9 +113,7 @@ h1 {
   border-radius: 4px 4px 0 0;  
   background-color: #e67e22;
 }
-/* .container {
-  width: 1170px;
-} */
+
 
 /*------------------BUTTONS-------------------*/
 
@@ -145,39 +149,11 @@ img {
     margin-right: 15px;    
 }
 
-a.btn.btn-simple:hover {
-  background-color: #e67e22;
-}
-
-
-
- /* .btn-ghost:link,
-  btn{
-    border: 1px solid #e67e22;
-    color: #e67e22;  
-   
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color:#fff;
-} */
-
-/* --------------------------------------------------------- */
-/* HEADINGS */
-/* --------------------------------------------------------- */
-
-
 h1, h2, h3{
   font-weight: 300;
   text-transform: uppercase;
 }
+
 
 h1 {
   margin-top: 0;
@@ -239,10 +215,413 @@ h2:after {
   margin-bottom: 30px;
 }
 
+
 /* --------------------------------------------------------- */
-/* MEALS */
+/* COSTUME */
 /* --------------------------------------------------------- */
 
-section.section-meals{
+section.section-costume{
   padding-top: 300px;
 }
+
+/*------------------ICONS-------------------*/
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------------------- */
+/* FEATURES */
+/* --------------------------------------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------------- */
+/* COSTUME */
+/* --------------------------------------------------------- */
+
+section.section-costume{
+  padding-top: 50px;
+}
+
+.costume-showcase {
+  list-style: none;
+  width:100%;
+  padding-right: 40px;
+}
+.costume-showcase li{
+  display: block;
+  float:left;
+  width: 25%;
+}
+.costume-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+.costume-photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.costume-photo img:hover{
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* Footer section
+   ===========================================*/
+
+  footer {
+    background-color: rgba(12, 12, 12, 0.9);
+    padding: 50px; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    height: 8%;
+  }
+   .footer-nav {
+     list-style: none;
+     float: left;
+   }
+  .social-links {
+    list-style: none;
+    float: right;
+  }
+  .footer-nav li,
+  .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-nav li:last-child,
+  .social-links li:last-child {
+    margin: 0;
+    font-size: 170%;
+  }
+
+  p.copy {
+    color: #888;
+    font-weight: 700;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+i.fa.fa-facebook:hover {
+  color:#3b5998;
+}
+i.fa.fa-twitter:hover {
+  color:#00aced;
+}
+i.fa.fa-google-plus:hover {
+  color:#dd4b39;
+}
+i.fa.fa-instagram:hover {
+  color:#5174af;
+}
+
+/* --------------------------------------------------------- */
+/* LOGIN PAGE */    
+/* --------------------------------------------------------- */
+.navbar-brand {
+  padding-top: 0;
+}
+h1.welcome {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.form-control {
+  display: block;
+  width: 45%;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.login-footer {
+  margin-top: 20px;
+}
+
+nav.navbar.navbar-inverse {
+  height: 80px;
+}
+@media only screen and (max-width: 480px) {
+  nav.navbar.navbar-inverse {
+     height: 250px !important;
+}
+}
+
+a.btn.btn-simple-login {
+  margin-top: 15px;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.jumbotron.login {
+  height: 500px;
+}
+.form-group {
+  margin-left: 40px;
+}
+
+input.btn.btn-login {
+    margin-left: 40px;
+}
+
+input.btn.btn-login {
+  background-color: #e67e22;
+  color:#fff; 
+  border: 1px solid #e67e22;
+  font-weight: 500;
+}
+
+input.btn.btn-login:hover {
+  background-color:#FAB77C;
+}
+.navbar-inverse, .navbar-inverse .navbar-nav>li>a:hover {
+  background-color: #cf6d17;
+  border-radius: 4px 4px 0 0;  
+}
+a.btn.btn-simple-login {
+  font-size: 16px;
+}
+
+/* --------------------------------------------------------- */
+/* SIGNUP PAGE */    
+/* --------------------------------------------------------- */
+h1.new {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+  text-align: center;
+}
+.jumbotron.signup {
+  height: 700px;
+}
+input.btn.btn-signup {
+  margin-left: 40px;
+}
+input.btn.btn-signup {
+  background-color: #e67e22;
+  color:#fff; 
+  border: 1px solid #e67e22;
+  font-weight: 500;
+}
+a.btn.btn-simple-signup {
+  margin-top: 15px;
+}
+
+
+/* --------------------------------------------------------- */
+/* GROUPS PAGE */    
+/* --------------------------------------------------------- */
+.row.groups {
+  margin-top: 50px;
+}  
+.groups-footer {
+  padding-top: 100px;
+}
+p.groups-select {
+  font-size: 18px;
+  font-weight:400;
+}
+@media only screen and (max-width: 480px) {
+  .groups-footer {
+    padding-top: 350px;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* AUTHORIZATION PAGE */    
+/* --------------------------------------------------------- */
+
+h1.test {
+  color: #888;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 40px;
+  text-align: center;
+  margin-top: 140px;
+}
+
+a.allgroups-link:hover {
+  color:#865F3C;
+}
+.content.test {
+  margin-bottom: 190px;
+}
+
+/* --------------------------------------------------------- */
+/* AUTHORIZATION PAGE */    /* Return to groups page */   
+/* --------------------------------------------------------- */
+a.welcome-back {
+  color: #865F3C;
+  font-size: 18px;
+  font-weight: 800;
+}
+a.btn.btn-full.create {
+  /* margin-bottom: 50px; */
+  margin-left: 50px;  
+}
+a.btn.btn-full.create:hover {
+  background-color:#F0AF76;
+}
+
+/* --------------------------------------------------------- */
+/* GROUP-DETAILS PAGE */      
+/* --------------------------------------------------------- */
+
+a.btn.btn-full.leave {
+  margin-bottom: 50px;
+  margin-left: 45%;  
+}
+
+.jumbotron.posts-details {
+  height: 350px;
+}
+
+a.btn.btn-full.leave:hover {
+  background-color:#F0AF76;
+}
+
+h2.member-count {
+  color: #888;
+}
+
+h1.group-name {
+  font-size: 25px;
+  font-weight: 400;
+  color: #888;
+  margin-left: 40px;
+  text-align: center;
+}
+.col-md-8.details {
+  line-height: 50px;
+}
+span.text-danger.icon-label {
+  font-size: 18px;
+  font-weight: 400;
+}
+.label-success {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  background-color:#e67e22;
+}
+@media only screen and (max-width: 480px) {
+  .groups-footer { 
+    padding-top:0;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* POSTS-UPDATE PAGE */      
+/* --------------------------------------------------------- */
+h4.update {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+input.btn.btn-simple.update {
+  margin-left: 20%;
+  color: #fff;
+  font-weight: 500;
+  background-color: #e67e22;
+}
+input.btn.btn-simple.update:hover {
+  background-color:#F0AF76;
+}
+
+@media only screen and (max-width: 480px) {
+  textarea.form-control {
+    height : 90%;
+    width : 90%;
+  }
+  input.btn.btn-simple.update {
+    margin-left: 35%;
+    margin-bottom: 50px;
+  }
+  li.dropdown {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* CREATE NEW GROUP PAGE */      
+/* --------------------------------------------------------- */
+
+input.btn.btn-simple.group-form {
+  background-color: #e67e22;
+}
+
+input.btn.btn-simple.group-form:hover {
+  background-color:#F0AF76;
+}
+input.btn.btn-simple.group-form {
+  margin-left: 20%;
+}
+h4.new-group {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  input.btn.btn-simple.group-form {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 35%;
+  }
+  h4.new-group {
+    margin-top: -30px;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* CREATE NEW POST */      
+/* --------------------------------------------------------- */
+
+h4.new-post {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+input.btn.btn-simple.new-post {
+  background-color: #e67e22;
+}
+input.btn.btn-simple.new-post:hover {
+  background-color: #F0AF76;
+}
+
+input.btn.btn-simple.new-post {
+  margin-left: 20%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 480px) {
+  input.btn.btn-simple.new-post {
+  margin-bottom: 50px;
+  }
+}  

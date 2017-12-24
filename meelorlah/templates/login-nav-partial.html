@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<nav class= "navbar navbar-inverse">
+    <div class = "container">
+        <div class ="row"> 
+            <a class="navbar-brand mynav" href="{% url 'home' %}"><img src = "{%static 'meelorlah/img/logo.png' %}" alt="meelorlah logo" class="logo"></a>
+            <div class= "container-fluid">
+                <div class="navbar-header">
+                    <button type= "button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>   
+                </div> 
+                <div class="collapse navbar-collapse" id="myNavbar">   
+                <ul class= "nav navbar-nav navbar-right">
+                 {% if user.is_authenticated %}
+                        <li><a href="{% url 'posts:create' %}" class="btn btn-simple">Post</a></li>
+                        <li><a href="{% url 'groups:all' %}" class="btn btn-simple">Groups</a></li>
+                        <li><a href="{% url 'groups:create' %}" class="btn btn-simple">Create Group</a></li>
+                        <li><a href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Share <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                          </ul>
+                        </li>  
+                        
+                  {% else %}
+                        <li><a href="{% url 'groups:all' %}"class="btn btn-simple">Groups</a></li>
+                        <li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
+                        <li><a href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
+                  {% endif %}
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    </div>       
+ </nav>  
+
+ 
