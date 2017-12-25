@@ -1,1 +1,1 @@
-web: sh -c 'cd [server_configs]/[qa] && gunicorn meelorlah.wsgi.application'
+web: gunicorn meelorlah.wsgi --log-file -
