@@ -9,3 +9,4 @@ pycparser==2.18
 pytz==2017.2
 PyYAML==3.12
 gunicorn==19.7.1
+whitenoise==3.3.1
