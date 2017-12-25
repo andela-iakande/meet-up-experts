@@ -1,1 +1,1 @@
-web: gunicorn meelorlah.wsgi --log-file -
+web: gunicorn meelorlah.wsgi.py --log-file -
