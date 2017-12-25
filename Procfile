@@ -1,1 +1,2 @@
-web: gunicorn meelorlah.wsgi --log-file -
+
+web: gunicorn  meelorlah.wsgi:application --preload --workers 1
